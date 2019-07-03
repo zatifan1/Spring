@@ -34,7 +34,7 @@ public class DataInit implements ApplicationRunner {
         accountRepository.save(account);
         accountRepository.save(account1);
         System.out.println();
-        try(FileWriter writer = new FileWriter("C:\\Users\\zatifan\\Documents\\java\\customerdemo-master\\SpringBootH2\\test.txt", false))
+        try(FileWriter writer = new FileWriter("test.txt", false))
         {
             String text = accountRepository.findById((long) 1).toString();
             writer.write(text);
