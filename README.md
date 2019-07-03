@@ -16,3 +16,5 @@ curl -X POST -H "Content-Type: application/json" -d "{\"firstName\":\"zakir11\",
 curl -X "DELETE" http://localhost:8080/api/accounts/1
 
 curl -H "Content-Type: application/json" http://localhost:8080/api/accounts/1
+
+Запись в файл происходит в /init/DataInit, записывает в test.txt. Использовалась хеширование паролей, и запись хеша в БД.
